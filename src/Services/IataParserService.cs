@@ -16,6 +16,40 @@ namespace IataParser.Services
             foreach (var line in ticketLines)
             {
                 // Parse the line and populate the ticket object
+
+                string standardMessageIdentifier;
+                string standardNumericQualifier;
+                string recordTypeIdentifier;
+
+                standardMessageIdentifier = line.Substring(0,3); // 0-> standardMessageIdentifierStart , 3 -> standardMessageIdentifierStartLength
+                standardNumericQualifier = line.Substring(11, 2); // the numbers will be paramterized accordingly
+
+                recordTypeIdentifier = standardMessageIdentifier + standardNumericQualifier; 
+
+                switch(recordTypeIdentifier)
+                {
+                    case "BKT06":
+                        string transactionNumber;
+                        string transactionRecordCounter;
+                        string ticketingAirlineCodeNumber;
+                        string reportingSystemIdentifier;
+
+                        transactionNumber = line.Substring(13, 6);
+                        transactionRecordCounter = line.Substring(21, 3);
+                        ticketingAirlineCodeNumber = line.Substring(24, 3);
+                        reportingSystemIdentifier = line.Substring(64, 4);
+
+                        ticket.TransactionNumber = transactionNumber;
+                        ticket.TransactionRecordCounter = transactionRecordCounter;
+                        ticket.TicketingAirlineCodeNumber = ticketingAirlineCodeNumber;
+                        ticket.ReportingSystemIdentifier = reportingSystemIdentifier;
+                    break;
+
+                    case "BKS24":
+
+                    break;
+
+                }
             }
 
             return ticket;
