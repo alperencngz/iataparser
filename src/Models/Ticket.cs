@@ -28,6 +28,7 @@ namespace IataParser.Models
     public string EndorsementsRestrictions { get; set; }
 
     // FOLLOWING PROPERTIES ARE STRING FOR PROPER CNJ TICKET PROCESSING 
+    public bool IsConjunctionTicket { get; set; } = false;
     public List<string> SegmentIdentifier { get; set; } = new List<string>();
     public List<string> OriginAirportCityCode { get; set; } = new List<string>();
     public List<string> FlightDepartureDate { get; set; } = new List<string>();
@@ -51,7 +52,7 @@ namespace IataParser.Models
     public List<string> FareComponentPricedPassengerTypeCode { get; set; } = new List<string>();
     public List<string> ThroughChangeOfGaugeIndicator { get; set; } = new List<string>();
     public List<string> EquipmentCode { get; set; } = new List<string>();
-    
+
     public string Fare { get; set; }
     public string TicketingModeIndicator { get; set; }
     public string EquivalentFarePaid { get; set; }

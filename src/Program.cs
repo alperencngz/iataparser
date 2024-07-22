@@ -74,6 +74,13 @@ namespace IataParser
                 OriginalIssueDate = ticket.OriginalIssueDate,
                 OriginalIssueAgentNumericCode = ticket.OriginalIssueAgentNumericCode,
                 EndorsementsRestrictions = ticket.EndorsementsRestrictions,
+                IsConjunctionTicket = ticket.IsConjunctionTicket,
+                ConjunctionTicketInfo = ticket.IsConjunctionTicket ? new
+                {
+                    ConjunctionTicketDocumentNumber = ticket.ConjunctionTicketDocumentNumber,
+                    ConjunctionCheckDigit = ticket.ConjunctionCheckDigit,
+                    ConjunctionCouponUseIndicator = ticket.ConjunctionCouponUseIndicator
+                } : null,
                 Segments = GetSegments(ticket),
                 Fare = ticket.Fare,
                 TicketingModeIndicator = ticket.TicketingModeIndicator,
