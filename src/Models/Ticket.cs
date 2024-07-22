@@ -26,29 +26,32 @@ namespace IataParser.Models
     public string OriginalIssueDate { get; set; }
     public string OriginalIssueAgentNumericCode { get; set; }
     public string EndorsementsRestrictions { get; set; }
-    public string SegmentIdentifier { get; set; }
-    public string OriginAirportCityCode { get; set; }
-    public string FlightDepartureDate { get; set; }
-    public string FlightDepartureTime { get; set; }
-    public string FlightDepartureTerminal { get; set; }
-    public string DestinationAirportCityCode { get; set; }
-    public string FlightArrivalDate { get; set; }
-    public string FlightArrivalTime { get; set; }
-    public string FlightArrivalTerminal { get; set; }
-    public string StopoverCode { get; set; }
-    public string NotValidBeforeDate { get; set; }
-    public string NotValidAfterDate { get; set; }
-    public string Carrier { get; set; }
-    public string SoldPassengerCabin { get; set; }
-    public string FlightNumber { get; set; }
-    public string ReservationBookingDesignator { get; set; }
-    public string FlightBookingStatus { get; set; }
-    public string BaggageAllowance { get; set; }
-    public string FareBasisTicketDesignator { get; set; }
-    public string FrequentFlyerReference { get; set; }
-    public string FareComponentPricedPassengerTypeCode { get; set; }
-    public string ThroughChangeOfGaugeIndicator { get; set; }
-    public string EquipmentCode { get; set; }
+
+    // FOLLOWING PROPERTIES ARE STRING FOR PROPER CNJ TICKET PROCESSING 
+    public List<string> SegmentIdentifier { get; set; } = new List<string>();
+    public List<string> OriginAirportCityCode { get; set; } = new List<string>();
+    public List<string> FlightDepartureDate { get; set; } = new List<string>();
+    public List<string> FlightDepartureTime { get; set; } = new List<string>();
+    public List<string> FlightDepartureTerminal { get; set; } = new List<string>();
+    public List<string> DestinationAirportCityCode { get; set; } = new List<string>();
+    public List<string> FlightArrivalDate { get; set; } = new List<string>();
+    public List<string> FlightArrivalTime { get; set; } = new List<string>();
+    public List<string> FlightArrivalTerminal { get; set; } = new List<string>();
+    public List<string> StopoverCode { get; set; } = new List<string>();
+    public List<string> NotValidBeforeDate { get; set; } = new List<string>();
+    public List<string> NotValidAfterDate { get; set; } = new List<string>();
+    public List<string> Carrier { get; set; } = new List<string>();
+    public List<string> SoldPassengerCabin { get; set; } = new List<string>();
+    public List<string> FlightNumber { get; set; } = new List<string>();
+    public List<string> ReservationBookingDesignator { get; set; } = new List<string>();
+    public List<string> FlightBookingStatus { get; set; } = new List<string>();
+    public List<string> BaggageAllowance { get; set; } = new List<string>();
+    public List<string> FareBasisTicketDesignator { get; set; } = new List<string>();
+    public List<string> FrequentFlyerReference { get; set; } = new List<string>();
+    public List<string> FareComponentPricedPassengerTypeCode { get; set; } = new List<string>();
+    public List<string> ThroughChangeOfGaugeIndicator { get; set; } = new List<string>();
+    public List<string> EquipmentCode { get; set; } = new List<string>();
+    
     public string Fare { get; set; }
     public string TicketingModeIndicator { get; set; }
     public string EquivalentFarePaid { get; set; }

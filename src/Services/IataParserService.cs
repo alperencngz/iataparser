@@ -58,7 +58,7 @@ namespace IataParser.Services
                         string ticketingAirlineCodeNumber;
                         string reportingSystemIdentifier;
 
-                        // following substrings will be paramterized too like line 34-35
+                        // following substrings will be paramterized too like line 34-35 BUT IGNORE FOR NOW
                         transactionNumber = line.Substring(13, 6); 
                         transactionRecordCounter = line.Substring(21, 3);
                         ticketingAirlineCodeNumber = line.Substring(24, 3);
