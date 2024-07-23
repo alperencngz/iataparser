@@ -11,8 +11,8 @@ namespace IataParser
     {
         static void Main(string[] args)
         {
-            string inputFilePath = "path_to_your_input_file.txt";
-            string outputFolderPath = "path_to_your_output_folder";
+            string inputFilePath = "/Users/alperencngzz/Desktop/internwork/IataParser/data/input/input.txt";
+            string outputFolderPath = "/Users/alperencngzz/Desktop/internwork/IataParser/data/output";
 
             IataParserService parser = new IataParserService();
             List<string> currentTicketLines = new List<string>();

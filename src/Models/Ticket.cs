@@ -26,6 +26,9 @@ namespace IataParser.Models
     public string OriginalIssueDate { get; set; }
     public string OriginalIssueAgentNumericCode { get; set; }
     public string EndorsementsRestrictions { get; set; }
+    public string ConjunctionTicketDocumentNumber { get; set; }
+    public string ConjunctionCheckDigit { get; set; }
+    public string ConjunctionCouponUseIndicator { get; set; }
 
     // FOLLOWING PROPERTIES ARE STRING FOR PROPER CNJ TICKET PROCESSING 
     public bool IsConjunctionTicket { get; set; } = false;
