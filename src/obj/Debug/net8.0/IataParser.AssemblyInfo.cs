@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IataParser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0018628b07dab2caff38e72bc1c5591ea3026496")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd27944b44ad4b18b66f0b6acd6786fa0a6a9385")]
 [assembly: System.Reflection.AssemblyProductAttribute("IataParser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IataParser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
