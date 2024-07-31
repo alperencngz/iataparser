@@ -10,7 +10,7 @@ namespace IataParser
         static void Main(string[] args)
         {
             string inputFilePath = "/Users/alperencngzz/Desktop/internwork/IataParser/data/input/input.txt";
-            string outputFolderPath = "/Users/alperencngzz/Desktop/internwork/IataParser/data/output";
+            string outputFolderPath = "/Users/alperencngzz/Desktop/internwork/IataParser/data/output2";
             string jsonInstructionsPath = "/Users/alperencngzz/Desktop/internwork/IataParser/src/Helpers/config.json";
 
             AbstractParser parser = new AbstractParser(jsonInstructionsPath);

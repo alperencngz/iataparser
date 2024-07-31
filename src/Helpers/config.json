@@ -1,136 +1,114 @@
 {
-    "BKT06": [
-      {"attribute": "TransactionNumber", "start_position": 13, "length": 6},
-      {"attribute": "TransactionRecordCounter", "start_position": 21, "length": 3},
-      {"attribute": "TicketingAirlineCodeNumber", "start_position": 24, "length": 3},
-      {"attribute": "ReportingSystemIdentifier", "start_position": 64, "length": 4}
-    ],
-    "BKS24": [
-      {"attribute": "DateOfIssue", "start_position": 13, "length": 6},
-      {"attribute": "TicketDocumentNumber", "start_position": 25, "length": 14},
-      {"attribute": "CheckDigit", "start_position": 39, "length": 1},
-      {"attribute": "CouponUseIndicator", "start_position": 40, "length": 4},
-      {"attribute": "ConjunctionTicketIndicator", "start_position": 44, "length": 3},
-      {"attribute": "AgentNumericCode", "start_position": 47, "length": 8},
-      {"attribute": "ReasonForIssuanceCode", "start_position": 55, "length": 1},
-      {"attribute": "TourCode", "start_position": 56, "length": 15},
-      {"attribute": "TransactionCode", "start_position": 71, "length": 4},
-      {"attribute": "TrueOriginDestinationCityCodes", "start_position": 75, "length": 10},
-      {"attribute": "PnrReferenceAndOrAirlineData", "start_position": 85, "length": 13},
-      {"attribute": "TimeOfIssue", "start_position": 98, "length": 4},
-      {"attribute": "JourneyTurnaroundAirportCityCode", "start_position": 102, "length": 5},
-      {"attribute": "IsConjunctionTicket", "start_position": 44, "length": 3, "condition": "CNJ"},
-      {"attribute": "ConjunctionTicketDocumentNumber", "start_position": 25, "length": 14},
-      {"attribute": "ConjunctionCheckDigit", "start_position": 39, "length": 1},
-      {"attribute": "ConjunctionCouponUseIndicator", "start_position": 40, "length": 4},
-      {"attribute": "ConjunctionTicketIndicator", "start_position": 44, "length": 3}
-    ],
-    "BKS46": [
-      {"attribute": "OriginalIssueTicketDocumentNumber", "start_position": 40, "length": 14},
-      {"attribute": "OriginalIssueLocationCityCode", "start_position": 54, "length": 3},
-      {"attribute": "OriginalIssueDate", "start_position": 57, "length": 7},
-      {"attribute": "OriginalIssueAgentNumericCode", "start_position": 64, "length": 8},
-      {"attribute": "EndorsementsRestrictions", "start_position": 72, "length": 49}
-    ],
-    "BKI62": [
-      {"attribute": "SegmentIdentifier", "start_position": 40, "length": 1},
-      {"attribute": "OriginAirportCityCode", "start_position": 41, "length": 5},
-      {"attribute": "FlightDepartureDate", "start_position": 46, "length": 7},
-      {"attribute": "FlightDepartureTime", "start_position": 53, "length": 5},
-      {"attribute": "FlightDepartureTerminal", "start_position": 58, "length": 5},
-      {"attribute": "DestinationAirportCityCode", "start_position": 63, "length": 5},
-      {"attribute": "FlightArrivalDate", "start_position": 68, "length": 7},
-      {"attribute": "FlightArrivalTime", "start_position": 75, "length": 5},
-      {"attribute": "FlightArrivalTerminal", "start_position": 80, "length": 5}
-    ],
-    "BKI63": [
-      {"attribute": "StopoverCode", "start_position": 41, "length": 1},
-      {"attribute": "NotValidBeforeDate", "start_position": 42, "length": 5},
-      {"attribute": "NotValidAfterDate", "start_position": 47, "length": 5},
-      {"attribute": "Carrier", "start_position": 62, "length": 3},
-      {"attribute": "SoldPassengerCabin", "start_position": 65, "length": 1},
-      {"attribute": "FlightNumber", "start_position": 66, "length": 5},
-      {"attribute": "ReservationBookingDesignator", "start_position": 71, "length": 2},
-      {"attribute": "FlightBookingStatus", "start_position": 85, "length": 2},
-      {"attribute": "BaggageAllowance", "start_position": 87, "length": 3},
-      {"attribute": "FareBasisTicketDesignator", "start_position": 90, "length": 15},
-      {"attribute": "FrequentFlyerReference", "start_position": 105, "length": 20},
-      {"attribute": "FareComponentPricedPassengerTypeCode", "start_position": 125, "length": 3},
-      {"attribute": "ThroughChangeOfGaugeIndicator", "start_position": 128, "length": 1},
-      {"attribute": "EquipmentCode", "start_position": 129, "length": 3}
-    ],
-    "BAR64": [
-      {"attribute": "Fare", "start_position": 40, "length": 12},
-      {"attribute": "TicketingModeIndicator", "start_position": 52, "length": 1},
-      {"attribute": "EquivalentFarePaid", "start_position": 53, "length": 12},
-      {"attribute": "Total", "start_position": 65, "length": 12},
-      {"attribute": "ServicingAirlineSystemProviderIdentifier", "start_position": 77, "length": 4},
-      {"attribute": "FareCalculationModeIndicator", "start_position": 81, "length": 1},
-      {"attribute": "BookingAgentIdentification", "start_position": 82, "length": 6},
-      {"attribute": "BookingEntityOutletType", "start_position": 88, "length": 1},
-      {"attribute": "FareCalculationPricingIndicator", "start_position": 89, "length": 1},
-      {"attribute": "AirlineIssuingAgent", "start_position": 90, "length": 8}
-    ],
-    "BAR65": [
-      {"attribute": "PassengerName", "start_position": 40, "length": 49},
-      {"attribute": "PassengerSpecificData", "start_position": 89, "length": 29},
-      {"attribute": "DateOfBirth", "start_position": 118, "length": 7},
-      {"attribute": "PassengerTypeCode", "start_position": 125, "length": 3}
-    ],
-    "BAR66": [
-      {"attribute": "FormOfPaymentSequenceNumber", "start_position": 40, "length": 1},
-      {"attribute": "FormOfPaymentInformation", "start_position": 41, "length": 50}
-    ],
-    "BKF81": [
-      {"attribute": "FareCalculationSequenceNumber", "start_position": 40, "length": 1},
-      {"attribute": "FareCalculationArea", "start_position": 41, "length": 87}
-    ],
-    "BCC82": [
-      {"attribute": "FormOfPaymentType", "start_position": 25, "length": 10},
-      {"attribute": "FormOfPaymentTransactionIdentifier", "start_position": 35, "length": 25}
-    ],
-    "BKP84": [
-      {"attribute": "FormOfPaymentType", "start_position": 25, "length": 10},
-      {"attribute": "FormOfPaymentAmount", "start_position": 35, "length": 11},
-      {"attribute": "FormOfPaymentAccountNumber", "start_position": 46, "length": 19},
-      {"attribute": "ExpiryDate", "start_position": 65, "length": 4},
-      {"attribute": "ExtendedPaymentCode", "start_position": 69, "length": 2},
-      {"attribute": "ApprovalCode", "start_position": 71, "length": 6},
-      {"attribute": "InvoiceNumber", "start_position": 77, "length": 14},
-      {"attribute": "InvoiceDate", "start_position": 91, "length": 6},
-      {"attribute": "RemittanceAmount", "start_position": 97, "length": 11},
-      {"attribute": "CardVerificationValueResult", "start_position": 108, "length": 1},
-      {"attribute": "CurrencyType", "start_position": 132, "length": 4}
-    ],
-    "BKS39": [
-        {"attribute": "CommissionType", "start_position": 43, "length": 6},
-        {"attribute": "CommissionRate", "start_position": 49, "length": 5},
-        {"attribute": "CommissionAmount", "start_position": 54, "length": 11},
-        {"attribute": "EffectiveCommissionRate", "start_position": 87, "length": 5},
-        {"attribute": "EffectiveCommissionAmount", "start_position": 92, "length": 11}
-    ],
-    "BKT05": [
-        {"attribute": "FileCreationDate", "start_position": 13, "length": 8},
-        {"attribute": "BillingPeriod", "start_position": 21, "length": 2},
-        {"attribute": "FileSequenceNumber", "start_position": 23, "length": 4},
-        {"attribute": "AgentNumericCode", "start_position": 27, "length": 8}
-    ],
-    "BKS25": [
-        {"attribute": "TypeOfSale", "start_position": 13, "length": 1},
-        {"attribute": "IssuePlace", "start_position": 14, "length": 20},
-        {"attribute": "IssuerCode", "start_position": 34, "length": 3},
-        {"attribute": "IssueTime", "start_position": 37, "length": 4},
-        {"attribute": "TicketDocumentNumber", "start_position": 41, "length": 14},
-        {"attribute": "CheckDigit", "start_position": 55, "length": 1},
-        {"attribute": "TransactionCode", "start_position": 56, "length": 4}
-    ],
-    "BKT02": [
-        {"attribute": "TotalNumberOfTransactions", "start_position": 13, "length": 8},
-        {"attribute": "TotalTransactionAmount", "start_position": 21, "length": 12}
-    ],
-    "BKT01": [
-        {"attribute": "RecordType", "start_position": 13, "length": 3},
-        {"attribute": "AgentNumericCode", "start_position": 16, "length": 8},
-        {"attribute": "CreationDate", "start_position": 24, "length": 8}
-    ]
+  "BKT06": [
+    {"attribute": "TransactionNumber", "start_position": 13, "length": 6},
+    {"attribute": "TransactionRecordCounter", "start_position": 21, "length": 3},
+    {"attribute": "TicketingAirlineCodeNumber", "start_position": 24, "length": 3},
+    {"attribute": "ReportingSystemIdentifier", "start_position": 64, "length": 4}
+  ],
+  "BKS24": [
+    {"attribute": "DateOfIssue", "start_position": 13, "length": 6},
+    {"attribute": "TicketDocumentNumber", "start_position": 25, "length": 14},
+    {"attribute": "CheckDigit", "start_position": 39, "length": 1},
+    {"attribute": "CouponUseIndicator", "start_position": 40, "length": 4},
+    {"attribute": "ConjunctionTicketIndicator", "start_position": 44, "length": 3},
+    {"attribute": "AgentNumericCode", "start_position": 47, "length": 8},
+    {"attribute": "ReasonForIssuanceCode", "start_position": 55, "length": 1},
+    {"attribute": "TourCode", "start_position": 56, "length": 15},
+    {"attribute": "TransactionCode", "start_position": 71, "length": 4},
+    {"attribute": "TrueOriginDestinationCityCodes", "start_position": 75, "length": 10},
+    {"attribute": "PnrReferenceAndOrAirlineData", "start_position": 85, "length": 13},
+    {"attribute": "TimeOfIssue", "start_position": 98, "length": 4},
+    {"attribute": "JourneyTurnaroundAirportCityCode", "start_position": 102, "length": 5},
+    {"attribute": "IsConjunctionTicket", "start_position": 44, "length": 3, "condition": "CNJ"},
+    {"attribute": "ConjunctionTicketDocumentNumber", "start_position": 25, "length": 14},
+    {"attribute": "ConjunctionCheckDigit", "start_position": 39, "length": 1},
+    {"attribute": "ConjunctionCouponUseIndicator", "start_position": 40, "length": 4}
+  ],
+  "BKS46": [
+    {"attribute": "OriginalIssueTicketDocumentNumber", "start_position": 40, "length": 14},
+    {"attribute": "OriginalIssueLocationCityCode", "start_position": 54, "length": 3},
+    {"attribute": "OriginalIssueDate", "start_position": 57, "length": 7},
+    {"attribute": "OriginalIssueAgentNumericCode", "start_position": 64, "length": 8},
+    {"attribute": "EndorsementsRestrictions", "start_position": 72, "length": 49}
+  ],
+  "BKI62": [
+    {"attribute": "SegmentIdentifier", "start_position": 40, "length": 1},
+    {"attribute": "OriginAirportCityCode", "start_position": 41, "length": 5},
+    {"attribute": "FlightDepartureDate", "start_position": 46, "length": 7},
+    {"attribute": "FlightDepartureTime", "start_position": 53, "length": 5},
+    {"attribute": "FlightDepartureTerminal", "start_position": 58, "length": 5},
+    {"attribute": "DestinationAirportCityCode", "start_position": 63, "length": 5},
+    {"attribute": "FlightArrivalDate", "start_position": 68, "length": 7},
+    {"attribute": "FlightArrivalTime", "start_position": 75, "length": 5},
+    {"attribute": "FlightArrivalTerminal", "start_position": 80, "length": 5}
+  ],
+  "BKI63": [
+    {"attribute": "SegmentIdentifier", "start_position": 40, "length": 1},
+    {"attribute": "OriginAirportCityCode", "start_position":41, "length": 5},
+    {"attribute": "DestinationAirportCityCode", "start_position": 63, "length": 5},
+    {"attribute": "StopoverCode", "start_position": 41, "length": 1},
+    {"attribute": "NotValidBeforeDate", "start_position": 42, "length": 5},
+    {"attribute": "NotValidAfterDate", "start_position": 47, "length": 5},
+    {"attribute": "Carrier", "start_position": 62, "length": 3},
+    {"attribute": "SoldPassengerCabin", "start_position": 65, "length": 1},
+    {"attribute": "FlightNumber", "start_position": 66, "length": 5},
+    {"attribute": "ReservationBookingDesignator", "start_position": 71, "length": 2},
+    {"attribute": "FlightBookingStatus", "start_position": 85, "length": 2},
+    {"attribute": "BaggageAllowance", "start_position": 87, "length": 3},
+    {"attribute": "FareBasisTicketDesignator", "start_position": 90, "length": 15},
+    {"attribute": "FrequentFlyerReference", "start_position": 105, "length": 20},
+    {"attribute": "FareComponentPricedPassengerTypeCode", "start_position": 125, "length": 3},
+    {"attribute": "ThroughChangeOfGaugeIndicator", "start_position": 128, "length": 1},
+    {"attribute": "EquipmentCode", "start_position": 129, "length": 3}
+  ],
+  "BAR64": [
+    {"attribute": "Fare", "start_position": 40, "length": 12},
+    {"attribute": "TicketingModeIndicator", "start_position": 52, "length": 1},
+    {"attribute": "EquivalentFarePaid", "start_position": 53, "length": 12},
+    {"attribute": "Total", "start_position": 65, "length": 12},
+    {"attribute": "ServicingAirlineSystemProviderIdentifier", "start_position": 77, "length": 4},
+    {"attribute": "FareCalculationModeIndicator", "start_position": 81, "length": 1},
+    {"attribute": "BookingAgentIdentification", "start_position": 82, "length": 6},
+    {"attribute": "BookingEntityOutletType", "start_position": 88, "length": 1},
+    {"attribute": "FareCalculationPricingIndicator", "start_position": 89, "length": 1},
+    {"attribute": "AirlineIssuingAgent", "start_position": 90, "length": 8}
+  ],
+  "BAR65": [
+    {"attribute": "PassengerName", "start_position": 40, "length": 49},
+    {"attribute": "PassengerSpecificData", "start_position": 89, "length": 29},
+    {"attribute": "DateOfBirth", "start_position": 118, "length": 7},
+    {"attribute": "PassengerTypeCode", "start_position": 125, "length": 3}
+  ],
+  "BAR66": [
+    {"attribute": "FormOfPaymentSequenceNumber", "start_position": 40, "length": 1},
+    {"attribute": "FormOfPaymentInformation", "start_position": 41, "length": 50}
+  ],
+  "BKF81": [
+    {"attribute": "FareCalculationSequenceNumber", "start_position": 40, "length": 1},
+    {"attribute": "FareCalculationArea", "start_position": 41, "length": 87}
+  ],
+  "BCC82": [
+    {"attribute": "FormOfPaymentType", "start_position": 25, "length": 10},
+    {"attribute": "FormOfPaymentTransactionIdentifier", "start_position": 35, "length": 25}
+  ],
+  "BKP84": [
+    {"attribute": "FormOfPaymentType", "start_position": 25, "length": 10},
+    {"attribute": "FormOfPaymentAmount", "start_position": 35, "length": 11},
+    {"attribute": "FormOfPaymentAccountNumber", "start_position": 46, "length": 19},
+    {"attribute": "ExpiryDate", "start_position": 65, "length": 4},
+    {"attribute": "ExtendedPaymentCode", "start_position": 69, "length": 2},
+    {"attribute": "ApprovalCode", "start_position": 71, "length": 6},
+    {"attribute": "InvoiceNumber", "start_position": 77, "length": 14},
+    {"attribute": "InvoiceDate", "start_position": 91, "length": 6},
+    {"attribute": "RemittanceAmount", "start_position": 97, "length": 11},
+    {"attribute": "CardVerificationValueResult", "start_position": 108, "length": 1},
+    {"attribute": "CurrencyType", "start_position": 132, "length": 4}
+  ],
+  "BKS39": [
+    {"attribute": "CommissionType", "start_position": 43, "length": 6},
+    {"attribute": "CommissionRate", "start_position": 49, "length": 5},
+    {"attribute": "CommissionAmount", "start_position": 54, "length": 11},
+    {"attribute": "EffectiveCommissionRate", "start_position": 87, "length": 5},
+    {"attribute": "EffectiveCommissionAmount", "start_position": 92, "length": 11}
+  ]
 }

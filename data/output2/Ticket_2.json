@@ -1,0 +1,85 @@
+{
+  "TransactionNumber": "000061",
+  "TransactionRecordCounter": "026",
+  "TicketingAirlineCodeNumber": "607",
+  "ReportingSystemIdentifier": "SABR",
+  "DateOfIssue": "230121",
+  "TicketDocumentNumber": "6079699182033",
+  "CheckDigit": "1",
+  "CouponUseIndicator": "FFVV",
+  "AgentNumericCode": "88200033",
+  "TransactionCode": "TKTT",
+  "TrueOriginDestinationCityCodes": "AMSAMS",
+  "PnrReferenceAndOrAirlineData": "QFVNCU/AA",
+  "TimeOfIssue": "0000",
+  "ConjunctionTicketDocumentNumber": "6079699182033",
+  "ConjunctionCheckDigit": "1",
+  "ConjunctionCouponUseIndicator": "FFVV",
+  "CommissionRate": "00000",
+  "CommissionAmount": "0000000000{",
+  "EffectiveCommissionRate": "00000",
+  "EffectiveCommissionAmount": "0000000000{",
+  "OriginalIssueAgentNumericCode": "00000000",
+  "EndorsementsRestrictions": "NON ENDO/ NONREF",
+  "Fare": "EUR   280.00",
+  "TicketingModeIndicator": "/",
+  "EquivalentFarePaid": "TRY  5706.00",
+  "Total": "TRY 14414.32",
+  "ServicingAirlineSystemProviderIdentifier": "0011",
+  "FareCalculationModeIndicator": "0",
+  "FareCalculationPricingIndicator": "0",
+  "PassengerName": "KUKASIRA/BRIGHTON MR",
+  "DateOfBirth": "20MAR81",
+  "FormOfPaymentSequenceNumber": "1",
+  "FormOfPaymentInformation": "CA",
+  "FareCalculationSequenceNumber": "2",
+  "FareCalculationArea": "126.20NUC294.46END ROE0.950867",
+  "ConjunctionTicketIndicator": "CNJ",
+  "IsConjunctionTicket": "CNJ",
+  "FormOfPaymentType": "CA",
+  "FormOfPaymentAmount": "0000144143B",
+  "Segments": [
+    {
+      "SegmentIdentifier": "1",
+      "OriginAirportCityCode": "AMS",
+      "FlightDepartureDate": "06OCT23",
+      "FlightDepartureTime": "940P",
+      "DestinationAirportCityCode": "AUH"
+    },
+    {
+      "SegmentIdentifier": "2",
+      "OriginAirportCityCode": "AUH",
+      "FlightDepartureDate": "07OCT23",
+      "FlightDepartureTime": "1125P",
+      "DestinationAirportCityCode": "KUL"
+    },
+    {
+      "SegmentIdentifier": "3",
+      "OriginAirportCityCode": "KUL",
+      "FlightDepartureDate": "08OCT23",
+      "FlightDepartureTime": "1225P",
+      "DestinationAirportCityCode": "DPS"
+    },
+    {
+      "SegmentIdentifier": "4",
+      "OriginAirportCityCode": "DPS",
+      "FlightDepartureDate": "13OCT23",
+      "FlightDepartureTime": "1255P",
+      "DestinationAirportCityCode": "KUL"
+    },
+    {
+      "SegmentIdentifier": "1",
+      "OriginAirportCityCode": "KUL",
+      "FlightDepartureDate": "13OCT23",
+      "FlightDepartureTime": "715P",
+      "DestinationAirportCityCode": "AUH"
+    },
+    {
+      "SegmentIdentifier": "2",
+      "OriginAirportCityCode": "AUH",
+      "FlightDepartureDate": "14OCT23",
+      "FlightDepartureTime": "955A",
+      "DestinationAirportCityCode": "AMS"
+    }
+  ]
+}
